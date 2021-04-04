@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffcc00">
+    <link rel="shorcut icon" href="img/quiz.ico">
+    <title>Quiz de Python !</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <div id="container">
+        <a href="https://www.apple.com/br/"><img href=""id="imagem1" src="img/a.svg"></a>
+        <a href="https://www.microsoft.com/pt-br"><img id="imagem2" src="img/m.svg"></a>
+        <a href="https://www.ufpe.br/"><img id="imagem3" src="img/ufpe.png"></a>
+        <a href="http://www.ufrpe.br/"><img id="imagem4" src="img/ufrpe.png"></a>
+        <a href="https://www.python.org/"><img id="imagem" src="img/quiz.svg"></a>
+        <div id="start">Quiz de Python Funcional!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id='D' onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+    <footer id ="rodape">
+        <p><b>Copyright &copy; 2019 - ARTILLIS PRADO </b><br/></p>
+    </footer>
+</body>
+</html>
